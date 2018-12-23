@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>carousel</title>
+	<link rel="stylesheet" href="web1.css">
+	<script src="web1.js"></script>
+</head>
+<body>
+	<div class="big">
+		<div class="top1">
+			<div class="top">
+				<div class="one">
+					<p class="p">帮5买，享帮帮</p>
+					<img class="qq" id="b" src="img/qq.png">
+					<img class="dd" id="b" src="img/vx.png">
+					<img class="dd" id="b" src="img/vb.png">
+					<a href="" class="a" id="deng">登录</a>
+					<a href="" class="a" id="deng">注册</a>
+					<img class="dd" id="b" src="img/xx.png">
+					<a href="" class="a">消息</a>
+					<img class="dd" id="b" src="img/dingdan.jpg">
+					<a href="" class="a">我的订单</a>
+					<a href="" class="a" id="deng">我的收藏</a>
+					<a href="" class="a" id="deng">帮钻兑换</a>
+					<img class="dd" id="b" src="img/tp-my-phone.png">
+					<a href="" class="a">手机版</a>
+					<a href="" class="a" id="deng">帮5淘</a>
+					<a href="" class="a" id="deng">客户服务</a>
+					<img class="dd" id="b" src="img/gouwuche.jpg">
+					<a href="" class="a">购物车</a>
+					<a href="" id="c">0</a>
+				</div>
+				<div class="two">
+					<img class="bang" src="img/logo_03.jpg">
+					<input id="text_content" class="in" type="text" value="输入商品网址或关键词，直通全网，快速帮5购！" />
+					<button class="btn" onclick="">搜全网</button>
+					<button class="btn2" onclick=""><img src="img/wenhao.jpg">常见问题</button>
+					<button class="btn1" onclick="" ><img src="img/xx.png"><br>mc@b5m.com</button>
+					<button class="btn1" onclick="" ><img src="img/yy.png"><br>400-085-0505</button><br><br><br>
+					<a href="" class="xifa"><span class="xi">洗发护发</span> | <span class="xi">日本纸尿裤</span> | <span class="shen">身体乳</span> | <span class="shen">内衣文胸</span> | <span class="ip">iPhone6s</span> | <span class="ip">iPad Air2</span> | <span class="shen">牛仔裤</span> | <span class="shen">奶粉</span> | <span class="shen">防晒霜</span> | <span class="shen">伞</span></a>
+				</div>
+			</div>
+		</div>
+		<div class="three">
+			<div class="four">
+				<button class="btnn" onclick="" id="quan">首页</button>
+				<button class="btnn" onclick="">热门品牌</button>
+				<button class="btnn" onclick="">美妆个户</button>
+				<button class="btnn" onclick="">服饰鞋包</button>
+				<button class="btnn" onclick="">母婴生活</button>
+				<button class="btnn" onclick="">食品保健</button>
+				<button class="btnn" onclick="">韩国直邮</button>
+				<button class="btnn" onclick="">跨境购</button>
+				<img class="ff_03" src="img/ff_03.jpg">
+			</div>
+		</div>
+		<div class="up">
+			<div class="uptop">
+				<p class="ju">首页>美容护肤/>美体/精油>防晒>韩国 RE:CIPE 水晶清爽防水防晒喷雾SPF50 150ml/瓶</p>
+			</div>
+			<div class="upp">
+				<div class="lef">
+					<div class="box" id="box">
+						<div class="img1" id="img1">
+							<img src="img/1.jpeg" id="img" width="400" height="400"/>
+							<div id="slider"></div>
+						</div>
+						<div id="img2">
+							<img src="img/1.jpeg"  id="Bimg" width="800" height="800"/>
+						</div>
+						<div class="diu">
+							<img onclick="changeImg('pre')" src="img/spanl.jpg">
+							<button class="diupic" onclick="changeImg('pre')"><img src="img/sp0.jpeg"></button>
+							<button class="diupic" onclick="changeImg('next')"><img src="img/sp1.jpeg"></button>
+							<img onclick="changeImg('next')" class="diupic2" src="img/spanr.jpg">
+						</div>
+					</div>
+					<div class="bot">
+						<p class="han">
+							韩国 RE:CIPE 水晶清爽防水防晒喷雾SPF50 150ml/瓶
+						</p>
+						<p class="xian" id="xian">【限购3件】 超透明无痕防晒，防水防汗定妆，保湿降温不黏腻。水晶防晒喷雾，喷后皮
+						</p>
+						<p class="xian">
+							肤水润，不油，不留白，更不会像防晒霜那样抹不开，非常实用，开始存货吧。
+						</p>
+						<p class="hang"><span class="jia">价格</span> <span class="qis"> ¥71</span> <span class="yib" style="text-decoration:line-through;">¥150</span></p>
+						<img class="ss_09" src="img/ss_09.jpg">
+						<div class="xuan">
+							<p class="jing">化妆品净含量</p>
+							<div class="ml" onclick=""><span class="mm">150ml</span></div>
+							<div class="ml1" onclick=""><span class="mm">200ml</span></div>
+						</div>
+						<div class="biao">
+							<p class="shu">数量</p>
+							<button id="bb" onclick="numDec()">-</button>
+							<input type="text" id="quantity" value="1">
+							<button id="aa" onclick="numAdd()">+</button>
+							<input type="hidden" value="28.1" id="price">
+							<p class="jain">件(库存5件)</p>
+						</div>
+						<img class="oo_03" src="img/oo_03.jpg">
+						<div class="xaunze">
+							<p class="nin">您已选择</p>
+							<p class="jinzi">"<span id="jinzi">150ml</span>"</p>
+						</div>
+						<div class="butdiv">
+							<button class="butdiv1" onclick="">立即购买</button>
+							<button class="butdiv2" onclick="showDiv()">加入购物车</button>
+							<div id="popWindow" class="popWindow" style="display: none;">  
+							</div>  
+							<div id="maskLayer" class="maskLayer" style="display: none;">  
+								<a href="#" onclick="closeDiv()" class="x" style="cursor:pointer;text-decoration: none;">X
+								</a>
+								<img class="rr11_02" src="img/rr11_02.jpg">
+								<button class="butdiv3" onclick="closeDiv()">继续购物</button>
+								<button class="butdiv4" onclick="">去购物车结算</button>
+							</div>  
+						</div>
+					</div>
+				</div>
+				<div class="rig">
+					<img src="img/ww_07.jpg">
+				</div>
+			</div>
+			<div class="upc">
+				<img src="img/a_07.jpg">
+			</div>
+		</div>
+			<div class="under">
+				<img class="loginB" src="img/loginB.jpg">
+				<ul id="gouwuu">
+					<li id="xiaa">购物指南</li>
+					<li id="xia">如何下单</li>
+					<li id="xia">帮5购流程</li>
+					<li id="xia">订单配送</li>
+					<li id="xia">物流配送</li>
+				</ul>
+				<ul id="gouwu">
+					<li id="xiaa">支付相关</li>
+					<li id="xia">支付方式</li>
+					<li id="xia">安全设置</li>
+					<li id="xia">账户信息</li>
+				</ul>
+				<ul id="gouwu">
+					<li id="xiaa">售后服务</li>
+					<li id="xia">取消订单</li>
+					<li id="xia">申请售后</li>
+					<li id="xia">退货流程</li>
+					<li id="xia">退款相关</li>
+				</ul>
+				<ul id="gouwu">
+					<li id="xiaa">VIP服务</li>
+					<li id="xia">VIP优惠</li>
+					<li id="xia">如何成为VIP</li>
+					<li id="xia">超级帮钻</li>
+				</ul>
+				<ul id="gouwu">
+					<li id="xiaa">帮韩品</li>
+					<li id="xia">韩国正品</li>
+					<li id="xia">闪电发货</li>
+					<li id="xia">帮韩品售后</li>
+				</ul>
+				<ul id="gouwu">
+					<li id="xiaa">更多</li>
+					<li id="xia">手机APP</li>
+					<li id="xia">帮5采APP</li>
+					<li id="xia">帮5淘插件</li>
+					<li id="xia">其他</li>
+				</ul>
+				<img class="erweima" src="img/erweima.jpg">
+				</div>
+				<div class="nono">
+					<div>
+						<hr style="width:1180px;border: 0.8px solid #ebeae8;float: left;">
+					</div>
+					<div>
+						<br>
+						<p class="guanyu">关于帮5买 | 联系我们 | 合作商家 | 友情链接 | 加入我们 | 移动应用 | 
+					热门 | 广告联盟 | 使用条款</p><p class="cop">Copyright © 2011-2015 B5M.COM.All rights reserved. Powered by B5Msoft Co.,Ltd.</p><p class="cop">增值电信业务经营许可证： 沪B2-20130065号 | 中华人民共和国互联网药品信息服务资格证书 (沪) -非经营性-2013-0034 沪卫(中医)网审【2015】 10032号 沪ICP备11034776号-3|食品许可证:</p><p class="cop">SP3101151410301755</p>
+					<img class="shang" src="img/bo1.gif">
+					<img class="bo1" src="img/bo2.png" >
+					<img class="bo1" src="img/bo3.gif">
+					<img class="bo2" src="img/bo4.png" >
+					<img class="bo1" src="img/bo5.png" >
+					<img class="bo1" src="img/bo6.png">
+					<img class="bo" src="img/bo7.png">
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+		var jinzi = document.getElementById("jinzi")
+		function keyup(){
+			var bb =document.getElementById("bb");
+			var aa =document.getElementById("aa");
+			var quantity = document.getElementById("quantity").value;
+			if(isNaN(quantity) ||  parseInt(quantity)!=quantity || parseInt(quantity)<1){
+				quantity = 1;
+				return;
+			}
+			if(quantity>=10){
+				document.getElementById("quantity").value=quantity.substring(0,quantity.length-1);
+			}
+		}
+		function numAdd(){
+			var aa =document.getElementById("aa");
+			var quantity = document.getElementById("quantity").value;
+			var num_add = parseInt(quantity)+1;
+			var price=document.getElementById("price").value;
+			if(num_add>=6){
+				aa.style.cursor="not-allowed";
+			}
+			else{
+				aa.style.cursor="pointer";
+				document.getElementById("quantity").value=num_add;
+				var Num=price*num_add;
+				document.getElementById("totalPrice").innerHTML=Num.toFixed(2);
+			}
+		}
+		function numDec(){
+			var bb =document.getElementById("bb");
+			var quantity = document.getElementById("quantity").value;
+			var price=document.getElementById("price").value;
+			var num_dec = parseInt(quantity)-1;
+			if(num_dec<=0){
+				bb.style.cursor="not-allowed";
+			}
+			else{
+				bb.style.cursor="pointer";
+				document.getElementById("quantity").value=num_dec;
+				var Num=price*num_dec;
+				document.getElementById("totalPrice").innerHTML=Num.toFixed(2);
+			}
+		}
+		var top1 = document.getElementsByClassName("top1")[0];
+		window.onscroll = function(){
+			var st = document.documentElement.scrollTop || document.body.scrollTop;
+			if(st>63){
+				top1.style.position = 'fixed';
+			}
+			else{
+				top1.style.position = 'static';
+			}
+		}
+		var now = 1;
+		function changeImg(which){
+			var img = document.getElementById("img");
+			var bimg = document.getElementById("Bimg");
+			if(which == 'pre'){
+				if(now = 1){
+					img.src = "img/1.jpeg";
+					bimg.src = "img/1.jpeg";
+				}
+			}
+			else{
+				img.src = "img/2.jpeg";
+				bimg.src = "img/2.jpeg";
+			}
+		}
+		var box = document.getElementById("box");
+  		var img1 = document.getElementById("img1");
+  		var slider = document.getElementById("slider");
+  		var img2 = document.getElementById("img2");
+  		var Bimg = document.getElementById("Bimg");
+  		img1.onmouseover = function(){
+  			slider.style.display = "block";
+  			img2.style.display = "block";
+  		}
+  		img1.onmouseout = function(){
+  			slider.style.display = "none";
+  			img2.style.display = "none";
+  		}
+  		img1.onmousemove = function(ev){
+  			var ev = ev||window.event;
+  			var left = ev.clientX-box.offsetLeft-slider.offsetWidth/2;
+  			var top = ev.clientY-box.offsetTop-slider.offsetHeight/2;
+  			var maxLeft = img1.offsetWidth-slider.offsetWidth;
+  			var maxTop = img1.offsetHeight-slider.offsetHeight;
+  			left = left>maxLeft?maxLeft:left<0?0:left;
+  			top = top>maxTop?maxTop:top<0?0:top;
+  			slider.style.left = left+"px";
+  			slider.style.top = top+"px";
+  			var w = left/maxLeft;
+  			var h = top/maxTop;
+  			var BimgLeft = img2.offsetWidth-Bimg.offsetWidth;
+  			var BimgTop = img2.offsetHeight-Bimg.offsetHeight;
+  			Bimg.style.left = w*BimgLeft+"px";
+  			Bimg.style.top = h*BimgTop+"px";
+  		}
+  		var ml = document.getElementsByClassName('ml')[0];
+  		ml.style.border='1px solid #fe0d4a';
+  		ml.style.background='url(img/duigou.png) 50px 18px no-repeat';
+  		ml.onclick=function(){
+  			ml1.style.border='none';
+  			ml1.style.background='none';
+  			ml.style.border='1px solid #fe0d4a';
+  			ml.style.background='url(img/duigou.png) 50px 18px no-repeat';
+  			jinzi.innerHTML='150ml';
+  		}
+  		var ml1 = document.getElementsByClassName('ml1')[0];
+  		ml1.onclick=function(){
+  			ml.style.border='none';
+  			ml.style.background='none';
+  			ml1.style.border='1px solid #fe0d4a';
+  			ml1.style.background='url(img/duigou.png) 50px 18px no-repeat';
+  			jinzi.innerHTML='200ml';
+  		}
+  		function showDiv() {
+  			document.getElementById('popWindow').style.display = 'block';  
+  			document.getElementById('maskLayer').style.display = 'block';        
+  		}
+  		function closeDiv() {  
+  			document.getElementById('popWindow').style.display = 'none';  
+  			document.getElementById('maskLayer').style.display = 'none';  
+  		}  
+	</script>
+</body>
+</html>
